@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class="container" style="background: white; padding: 20px; margin-top: 10px; border-radius: 20px;">
+        <h1><b>Welcome to our blog!</b></h1>
+        <link rel="stylesheet" href="C:\Users\dellscj\Desktop\djangoblog\blogproj\blog\static\css\fontawesome.min.css">
+        <p><br><h3><b>Everyone Has A Story To Tell</b></h3>This blog is a home 
+        for human stories and ideas. Here, anyone can share insightful perspectives, useful knowledge, and
+        life wisdom with the world—without building a mailing list or a following first. The internet is 
+        noisy and chaotic; This blog is quiet yet full of insight. It’s simple, beautiful, collaborative, 
+        and helps you find the right audience for whatever you have to say.</p>
+        <br>
+
+<p><h4><b>Join Us and Speak Your Mind!</b></h4></p>
+<a href="{% url 'register' %}"><button>Register Now!</button></a><br>
+
+
+<p><h5><i>Feel free to explore our articles and don't hesitate to reach out if you have any questions or suggestions.</i></h5></p>
+        <ul>
+            <li><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:habibaanjum08@gmail.com">Mail Me</a></li>
+            <li><i class="fas fa-phone"></i> <strong>Phone:</strong> <a href="tel:+918840871145">+91 884 087 1145</a></li>
+            <li><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/8840871145" target="_blank">WhatsApp Me</a></li>
+            <li><i class="fab fa-instagram"></i> <strong>Instagram:</strong> <a href="https://www.instagram.com/habibazainab4/" target="_blank">Follow Me</a></li>
+        </ul>
+        
+     <p><h3><b><i>Start Reading, writing and Become on of Us!</i></b></h3></p>
+
+    </div>
+{% endblock content %}
